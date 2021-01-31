@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		3A6CE39925C5707400BBFA74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6CE39825C5707400BBFA74 /* Assets.xcassets */; };
 		3A6CE39C25C5707400BBFA74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6CE39B25C5707400BBFA74 /* Preview Assets.xcassets */; };
 		3A6CE39F25C5707400BBFA74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6CE39D25C5707400BBFA74 /* LaunchScreen.storyboard */; };
+		4D1B8B975FF3FF8885E0D589 /* Pods_AwsServicesConnectedPrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD55C00A3864088781D3C82 /* Pods_AwsServicesConnectedPrototype.framework */; };
+		8B1394A5AED647B0B952AA1B /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 874419F5C0BD4749A51FFC6A /* awsconfiguration.json */; };
+		BF1AFEB75F3F43A091B65E47 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AB4DF6AE54F49F080F2A845 /* amplifyconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,12 @@
 		3A6CE39B25C5707400BBFA74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3A6CE39E25C5707400BBFA74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A6CE3A025C5707400BBFA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AB4DF6AE54F49F080F2A845 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		874419F5C0BD4749A51FFC6A /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
+		9603DC11888CF85677D9787D /* Pods-AwsServicesConnectedPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwsServicesConnectedPrototype.release.xcconfig"; path = "Target Support Files/Pods-AwsServicesConnectedPrototype/Pods-AwsServicesConnectedPrototype.release.xcconfig"; sourceTree = "<group>"; };
+		BDD55C00A3864088781D3C82 /* Pods_AwsServicesConnectedPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwsServicesConnectedPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3FF8D8D78E897434343E5B6 /* Pods-AwsServicesConnectedPrototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwsServicesConnectedPrototype.debug.xcconfig"; path = "Target Support Files/Pods-AwsServicesConnectedPrototype/Pods-AwsServicesConnectedPrototype.debug.xcconfig"; sourceTree = "<group>"; };
+		DC8F72EFA97C4B32B1D818C8 /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D1B8B975FF3FF8885E0D589 /* Pods_AwsServicesConnectedPrototype.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +50,11 @@
 		3A6CE38625C5707300BBFA74 = {
 			isa = PBXGroup;
 			children = (
+				8F70E98B9D7D4CF48E7F39E5 /* AmplifyConfig */,
 				3A6CE39125C5707300BBFA74 /* AwsServicesConnectedPrototype */,
 				3A6CE39025C5707300BBFA74 /* Products */,
+				B45F4007A6AAA9DD4A185E2F /* Pods */,
+				5A18C0F70B9C1E942B534F5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +88,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5A18C0F70B9C1E942B534F5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDD55C00A3864088781D3C82 /* Pods_AwsServicesConnectedPrototype.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F70E98B9D7D4CF48E7F39E5 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				DC8F72EFA97C4B32B1D818C8 /* amplifytools.xcconfig */,
+				7AB4DF6AE54F49F080F2A845 /* amplifyconfiguration.json */,
+				874419F5C0BD4749A51FFC6A /* awsconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			path = .;
+			sourceTree = "<group>";
+		};
+		B45F4007A6AAA9DD4A185E2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3FF8D8D78E897434343E5B6 /* Pods-AwsServicesConnectedPrototype.debug.xcconfig */,
+				9603DC11888CF85677D9787D /* Pods-AwsServicesConnectedPrototype.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A6CE3A325C5707400BBFA74 /* Build configuration list for PBXNativeTarget "AwsServicesConnectedPrototype" */;
 			buildPhases = (
+				4DBA5CD0BD57775A59D68265 /* [CP] Check Pods Manifest.lock */,
 				3A6CE38B25C5707300BBFA74 /* Sources */,
 				3A6CE38C25C5707300BBFA74 /* Frameworks */,
 				3A6CE38D25C5707300BBFA74 /* Resources */,
+				939DFEC341B20678121C64DE /* [CP] Embed Pods Frameworks */,
+				3A6CE3AA25C58CB400BBFA74 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -135,10 +179,71 @@
 				3A6CE39F25C5707400BBFA74 /* LaunchScreen.storyboard in Resources */,
 				3A6CE39C25C5707400BBFA74 /* Preview Assets.xcassets in Resources */,
 				3A6CE39925C5707400BBFA74 /* Assets.xcassets in Resources */,
+				BF1AFEB75F3F43A091B65E47 /* amplifyconfiguration.json in Resources */,
+				8B1394A5AED647B0B952AA1B /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A6CE3AA25C58CB400BBFA74 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/AmplifyTools/amplify-tools.sh\"\n";
+		};
+		4DBA5CD0BD57775A59D68265 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AwsServicesConnectedPrototype-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		939DFEC341B20678121C64DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwsServicesConnectedPrototype/Pods-AwsServicesConnectedPrototype-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwsServicesConnectedPrototype/Pods-AwsServicesConnectedPrototype-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwsServicesConnectedPrototype/Pods-AwsServicesConnectedPrototype-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A6CE38B25C5707300BBFA74 /* Sources */ = {
@@ -283,11 +388,13 @@
 		};
 		3A6CE3A425C5707400BBFA74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3FF8D8D78E897434343E5B6 /* Pods-AwsServicesConnectedPrototype.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"AwsServicesConnectedPrototype/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AwsServicesConnectedPrototype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -296,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.AwsServicesConnectedPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,11 +411,13 @@
 		};
 		3A6CE3A525C5707400BBFA74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9603DC11888CF85677D9787D /* Pods-AwsServicesConnectedPrototype.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"AwsServicesConnectedPrototype/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AwsServicesConnectedPrototype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,6 +426,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.AwsServicesConnectedPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

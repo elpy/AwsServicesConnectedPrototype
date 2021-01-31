@@ -1,0 +1,6 @@
+framework module Pods_AwsServicesConnectedPrototype {
+  umbrella header "Pods-AwsServicesConnectedPrototype-umbrella.h"
+
+  export *
+  module * { export * }
+}
